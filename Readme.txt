@@ -50,27 +50,26 @@ INSERT INTO `departments` (`department_Name`) VALUES ('Engineering');
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE TABLE emp (
-  empno decimal(4,0) NOT NULL AUTO_INCREMENT,
-  ename varchar(10) default NULL,
+CREATE TABLE staff (
+  staff_ID decimal(4,0) NOT NULL AUTO_INCREMENT,
+  staff_Name varchar(10) default NULL,
   job varchar(9) default NULL,
   mgr decimal(4,0) default NULL,
   hiredate date default NULL,
   sal decimal(7,2) default NULL,
-  comm decimal(7,2) default NULL,
-  deptno decimal(2,0) default NULL,
-  PRIMARY KEY (empno)
+  deptno decimal(4,0) default NULL,
+  PRIMARY KEY (staff_ID)
 );
 
-INSERT INTO emp VALUES ('SMITH','CLERK','7902','1980-12-17','800.00',NULL,'20');
-INSERT INTO emp VALUES ('ALLEN','SALESMAN','7698','1981-02-20','1600.00','300.00','30');
-INSERT INTO emp VALUES ('WARD','SALESMAN','7698','1981-02-22','1250.00','500.00','30');
-INSERT INTO emp VALUES ('JONES','MANAGER','7839','1981-04-02','2975.00',NULL,'20');
-INSERT INTO emp VALUES ('MARTIN','SALESMAN','7698','1981-09-28','1250.00','1400.00','30');
-INSERT INTO emp VALUES ('BLAKE','MANAGER','7839','1981-05-01','2850.00',NULL,'30');
-INSERT INTO emp VALUES ('CLARK','MANAGER','7839','1981-06-09','2450.00',NULL,'10');
-INSERT INTO emp VALUES ('SCOTT','ANALYST','7566','1982-12-09','3000.00',NULL,'20');
-INSERT INTO emp VALUES ('KING','PRESIDENT',NULL,'1981-11-17','5000.00',NULL,'10');
+INSERT INTO staff VALUES ('SMITH','CLERK','7902','1980-12-17','800.00',NULL,'20');
+INSERT INTO staff VALUES ('ALLEN','SALESMAN','7698','1981-02-20','1600.00','300.00','30');
+INSERT INTO staff VALUES ('WARD','SALESMAN','7698','1981-02-22','1250.00','500.00','30');
+INSERT INTO staff VALUES ('JONES','MANAGER','7839','1981-04-02','2975.00',NULL,'20');
+INSERT INTO staff VALUES ('MARTIN','SALESMAN','7698','1981-09-28','1250.00','1400.00','30');
+INSERT INTO staff VALUES ('BLAKE','MANAGER','7839','1981-05-01','2850.00',NULL,'30');
+INSERT INTO staff VALUES ('CLARK','MANAGER','7839','1981-06-09','2450.00',NULL,'10');
+INSERT INTO staff VALUES ('SCOTT','ANALYST','7566','1982-12-09','3000.00',NULL,'20');
+INSERT INTO staff VALUES ('KING','PRESIDENT',NULL,'1981-11-17','5000.00',NULL,'10');
 
 
 
