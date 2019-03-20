@@ -1,4 +1,6 @@
-
+<!-- =======================================================
+20-MAR-19   A-01-01     aadake     ##1     Created.
+======================================================= -->
 <html lang="en">
 
 <head>
@@ -6,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Login Page 2 | College Admin</title>
+  <title>Login Page  | College Admin</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,23 +26,23 @@
 
   <div class="container">
 
-    <form class="login-form" action="index.html">
+    <form class="login-form" METHOD="POST" action="login.php">
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-          <input type="text" class="form-control" placeholder="Username" required autofocus>
+          <input type="text" name="userName" class="form-control" placeholder="Username" required autofocus>
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" placeholder="Password" required>
+          <input type="password" name="userPassword" class="form-control" placeholder="Password" required>
         </div>
         <label class="checkbox">
-                <input type="checkbox" value="remember-me"/> Remember me
-                <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
-            </label>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" >Login</button>
-        <button type="submit" class="btn btn-info btn-lg btn-block" >Signup</button>
+            <input type="checkbox" value="remember-me"/> Remember me
+            <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
+        </label>
+        <button type="submit" style="border-radius: 60px 60px;" class="btn btn-primary btn-lg btn-block" >Login</button>
+        <button onclick="window.location.href = 'registration.php';" style="border-radius: 60px 60px;" class="btn btn-info btn-lg btn-block" >Signup</button>
       </div>
     </form>
 	
