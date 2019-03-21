@@ -1,3 +1,6 @@
+<!-- =======================================================
+    20-MAR-19   A-01-01     aadake     ##1     Created.
+    ======================================================= -->
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -26,13 +29,11 @@ CREATE TABLE course
 	course_Name varchar(50) NOT NULL,
 	course_Fees decimal(10,2) default NULL,
 	course_Duration int default NULL,
-	course_DepartmentID int,
-	PRIMARY KEY (course_ID),
-	FOREIGN KEY (course_DepartmentID) REFERENCES departments(department_ID)
+	PRIMARY KEY (course_ID)
 );
 
-INSERT INTO `course` (`course_Name`, `course_Fees`, `course_Duration`, `course_DepartmentID`) VALUES ('MCA', 10300.00, 3, 1)
-INSERT INTO `course` (`course_Name`, `course_Fees`, `course_Duration`, `course_DepartmentID`) VALUES ('MBA', 10700.00, 2, 1)
+INSERT INTO `course` (`course_Name`, `course_Fees`, `course_Duration`) VALUES ('JAVA', 10000.00, 3)
+INSERT INTO `course` (`course_Name`, `course_Fees`, `course_Duration`, `course_DepartmentID`) VALUES ('PHP', 10000.00, 2)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,7 +52,7 @@ INSERT INTO `departments` (`department_Name`) VALUES ('Engineering');
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE TABLE staff (
-  staff_ID decimal(4,0) NOT NULL AUTO_INCREMENT,
+  staff_ID int NOT NULL AUTO_INCREMENT,
   staff_Name varchar(10) default NULL,
   job varchar(9) default NULL,
   mgr decimal(4,0) default NULL,

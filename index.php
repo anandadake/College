@@ -3,19 +3,10 @@
 ======================================================= -->
 <!DOCTYPE html>
 <?php 
-  if (isset($_SESSION['is_logged_in'])) 
-  {
-   // remove all session variables
-   session_unset(); 
-   // destroy the session 
-  session_destroy(); 
-   header("Location: http://localhost/college/login.html");
-  }
-  else
-  {
     session_start();
-    
-  }
+    if (!isset($_SESSION['userName'])) { 
+      header("Location: http://localhost/college/login.php");
+    }
 ?>
 <html lang="en">
 
@@ -293,7 +284,7 @@
                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
               </li>
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                <a href="login.php"><i class="icon_key_alt"></i> Log Out</a>
               </li>
               <li>
                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -328,8 +319,8 @@
                 <span class="menu-arrow arrow_carrot-right"></span>
             </a>
             <ul class="sub">
-              <li><a class="" href="">Add EMPLOYEE</a></li>
-              <li><a class="" href="">All EMPLOYEE</a></li>
+              <li><a class="" href="RegistrationStaff.php">Add Staff</a></li>
+              <li><a class="" href="">All Staff</a></li>
             </ul>
           </li>
           <li class="sub-menu">
@@ -386,7 +377,7 @@
             </a>
             <ul class="sub">
               <li><a class="" href="profile.html">Profile</a></li>
-              <li><a class="" href="login.html"><span>Login Page</span></a></li>
+              <li><a class="" href="login.php"><span>Login Page</span></a></li>
               <li><a class="" href="contact.html"><span>Contact Page</span></a></li>
               <li><a class="" href="blank.html">Blank Page</a></li>
               <li><a class="" href="404.html">404 Error</a></li>
