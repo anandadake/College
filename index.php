@@ -11,6 +11,7 @@
 <html lang="en">
 
 <head>
+        <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png">
 
@@ -284,7 +285,7 @@
                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
               </li>
               <li>
-                <a href="login.php"><i class="icon_key_alt"></i> Log Out</a>
+                <a href="logout.php"><i class="icon_key_alt"></i> Log Out</a>
               </li>
               <li>
                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -368,6 +369,17 @@
               <li><a class="" href="basic_table.html">Sub Table</a></li>
             </ul>
           </li>
+          <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class="icon_table"></i>
+                <span>Batches</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+            </a>
+            <ul class="sub">
+              <li><a class="" href="addBatch.php">Add Batch</a></li>
+              <li><a class="" href="basic_table.html">All Batch</a></li>
+            </ul>
+          </li>
 
           <li class="sub-menu">
             <a href="javascript:;" class="">
@@ -379,7 +391,7 @@
               <li><a class="" href="profile.html">Profile</a></li>
               <li><a class="" href="login.php"><span>Login Page</span></a></li>
               <li><a class="" href="contact.html"><span>Contact Page</span></a></li>
-              <li><a class="" href="blank.html">Blank Page</a></li>
+              <li><a class="" href="blank.php">Blank Page</a></li>
               <li><a class="" href="404.html">404 Error</a></li>
             </ul>
           </li>

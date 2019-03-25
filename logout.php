@@ -7,5 +7,5 @@
     session_destroy();
     
 
-	header("Location: http://localhost/college/login.html");
+	header("Location: http://localhost/college/login.php");
 ?>
