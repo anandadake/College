@@ -381,35 +381,42 @@
             <!--main content start-->
             <section id="main-content">
                 <section class="wrapper">
-                    <
-                    <div class="container register-form">
-                        <div class="form">
-                            <div class="note">
-                                <p>This is a simpleRegister Form made using Boostrap.</p>
-                            </div>
-                            <div class="form-content">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name *" value=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Phone Number *" value=""/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Password *" value=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Confirm Password *" value=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button" class="btnSubmit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
+                    
+                <div class="container">
+    
+    <form class="login-form" METHOD="POST" action="">
+      <div class="login-wrap">
+        <p class="login-img"><i class="icon_profile"></i><span>Add Staff</span></p>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="text" name="Name" class="form-control" placeholder="Name" required autofocus>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="tel" name="PhoneNo1" class="form-control" placeholder="Phone No1" maxLength="10" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <input type="tel" name="PhoneNo2" class="form-control" placeholder="Phone No2" maxLength="10" required>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="icon_profile"></i></span>
+            <textarea rows="4" cols="35" name="Address" placeholder="Address" required></textarea>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="icon_profile"></i></span>
+          <input type="text" name="userName" class="form-control" placeholder="Username" required>
+        </div>
+        <button type="submit" style="border-radius: 60px 60px;" class="btn btn-primary btn-lg btn-block" >Add</button>
+        <button type="reset"  style="border-radius: 60px 60px;" class="btn btn-primary btn-lg btn-block" >reset</button>
+      </div>
+    </form>
+    
+  </div>
                     <!-- page start-->
                     Page content goes here
                     <!-- page end-->
