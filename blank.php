@@ -411,14 +411,15 @@
             <table class="table table-striped table-hover">
                <thead>
                   <tr>
-                     <th style="width:5%">ID</th>
+                     <th style="width:2%">ID</th>
                      <th style="width:15%">Full Name</th>
-                     <th style="width:15%">Email</th>
+                     <th style="width:13%">Email</th>
                      <th style="width:10%">Phone No 1</th>
-                     <th style="width:10%">Phone No 2</th>
+                     <th style="width:8%">Phone No 2</th>
                      <th style="width:25%">Address</th>
                      <th style="width:10%">UserName</th>
                      <th style="width:10%">Password</th>
+                     <th style="width:7%">userType</th>
                   </tr>
                </thead>
                <?php 
@@ -461,6 +462,9 @@
                   </td>
                   <td>
                      <div contentEditable='true'  class="edit" id='userPassword_<?php echo $id; ?>'><?php echo $userPassword; ?> </div>
+                  </td>
+                  <td>
+                     <div> <?php echo $userType; ?> </div>
                   </td>
                </tr>
                <?php } ?> 
