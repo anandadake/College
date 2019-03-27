@@ -7,7 +7,7 @@
 CREATE TABLE `users` (
  `ID` int(11) NOT NULL AUTO_INCREMENT,
  `Name` varchar(30) DEFAULT NULL,
- `Email` varchar(20) DEFAULT NULL,
+ `Email` varchar(30) DEFAULT NULL,
  `PhoneNo1` decimal(10,0) DEFAULT NULL,
  `PhoneNo2` int(10) DEFAULT NULL,
  `Address` varchar(50) DEFAULT NULL,

@@ -7,9 +7,9 @@
 
 body {
 
-    color: #797979;
+    color: #000000;
 
-    background: #eeeeee;
+    background: #ffffff;
 
     font-family: 'Lato', sans-serif;
 
@@ -26,6 +26,19 @@ h1,h2,h3,h4,h5{
     font-weight: 300;
 
 }
+
+
+.edit{
+
+    width: 100%;
+    height:100%;
+    }
+.editMode{
+
+    border: 2px solid #3e4650;
+    background-color:#ffffff;
+    }
+
 
 label{
 
@@ -505,7 +518,7 @@ table tr th { color: #688a7e;}
 
     position: fixed;
 
-    background: #394a59;
+    background: #000000;
 
 }
 
@@ -2065,9 +2078,9 @@ div[data-role="editor-toolbar"] {
 
   color : #fff;
 
-  background : #1a2732;
+  background : #000000;
 
-  background-color : #1a2732;
+  background-color : #000000;
 
 }
 

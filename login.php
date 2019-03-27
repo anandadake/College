@@ -40,11 +40,11 @@
                             <span class="input-group-addon"><i onclick="showPassword()" class="fa fa-eye-slash" aria-hidden="true"></i></span>
                         </div>
                         <label class="checkbox">
-                        <input type="checkbox" name="remember-me" value="remember-me"/> Remember me
+                        <input type="checkbox" name="remember-me" value="remember-me" checked/> Remember me
                         <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
                         </label>
                         <button type="submit" name="login"  class="btn btn-primary btn-lg btn-block" >Login</button>
-                        <button onclick="window.location.href = 'registration.php';" class="btn btn-info btn-lg btn-block" >Signup</button>
+                        <button onclick="window.location.href = 'registration.php'" class="btn btn-info btn-lg btn-block" >Signup</button>
                     </div>
                 </form>
             </div>
